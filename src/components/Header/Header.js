@@ -1,14 +1,20 @@
+import Image from 'next/image';
 import styles from './header.module.css';
+import mainLogo from '@/assets/main_logo.svg';
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.headerContainer}`}>
         <div className={styles.logo}>
-          {/* Placeholder for Logo */}
-          <div className={styles.logoPlaceholder}>logo</div>
+          <Image 
+            src={mainLogo} 
+            alt="Stati Generali del Fare Logo" 
+            className={styles.logoImage}
+            priority
+          />
         </div>
-        <nav className={styles.nav}> {/* aggiungere logo ad inizio header ed aggiungere ancore */}
+        <nav className={styles.nav}>
           <a href="#about" className={styles.navLink}>Cos'è</a>
           <a href="#program" className={styles.navLink}>Programma</a>
           <a href="#ambassadors" className={styles.navLink}>Chi Siamo?</a>

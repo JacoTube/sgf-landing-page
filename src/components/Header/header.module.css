@@ -15,22 +15,26 @@
   align-items: center;
 }
 
-.logoPlaceholder {
-  font-family: var(--font-headings);
-  font-size: 24px;
-  font-weight: 800;
-  color: var(--color-primary);
-  letter-spacing: -0.5px;
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: auto;
+  height: 64px;
+  /* Constrains the logo height, maintaining aspect ratio */
+  max-width: 250px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 64px;
 }
 
 .navLink {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--color-dark);
 }
@@ -43,5 +47,6 @@
 @media (max-width: 992px) {
   .nav {
     display: none;
+    /* We'll hide it on mobile for now, to focus on desktop. We can add a hamburger menu later if needed */
   }
 }
