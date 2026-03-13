@@ -4,12 +4,6 @@
   display: flex;
   align-items: center;
   background-color: var(--color-white); /* Fallback */
-
-  background-image: url('');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: var(--color-white);
 }
 
 .overlay {
