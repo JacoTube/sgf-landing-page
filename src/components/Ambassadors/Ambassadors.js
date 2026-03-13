@@ -4,15 +4,15 @@ export default function Ambassadors() {
   return (
     <section id="ambassadors" className={`section-padding ${styles.ambassadorsSection}`}>
       <div className={`container ${styles.container}`}>
-        <h2 className={styles.heading}><br/>Chi Siamo?</h2>
-        
+        <h2 className={styles.heading}> <br />Chi siamo?</h2>
+
         <div className={styles.content}>
           <p className={styles.lead}>
             Una rete di persone che ogni giorno costruisce qualcosa di concreto per la Calabria — non da un palco, ma dal proprio lavoro.
           </p>
 
           <div className={styles.teamGrid}>
-            
+
             {/* Core Team Block */}
             <div className={styles.teamGroup}>
               <h3 className={styles.groupTitle}>Direzione & Coordinamento</h3>
@@ -20,9 +20,10 @@ export default function Ambassadors() {
                 <li><strong>Roberto Tesoriere</strong> <span>Fondatore, Ambasciatori di Calabria</span></li>
                 <li><strong>Sarah Procopio</strong> <span>Direzione Contenuti e Vision</span></li>
                 <li><strong>Gaetano Moraca</strong> <span>Direzione Contenuti e Vision</span></li>
-                <li><strong>Christian Zuin</strong> <span>(Protur Media) Organizzazione & Logistica</span></li>
+                <li><strong>Christian Zuin (Protur Media)</strong> <span>Organizzazione & Logistica</span></li>
                 <li><strong>Alessandro Fedele</strong> <span>Organizzazione & Logistica</span></li>
-                <li><strong>Chef Battaglia</strong> <span>Collaborazione Diretta</span></li>
+                <li><strong>Chef Battaglia</strong> <span>Organizzazione & Logistica</span></li>
+                <li><strong>Direzione di Altafiumara Resort & Spa</strong> <span>Organizzazione & Logistica</span></li>
               </ul>
             </div>
 
@@ -38,7 +39,7 @@ export default function Ambassadors() {
                 <li><strong>Matteo Pugliese</strong></li>
               </ul>
             </div>
-            
+
             {/* Ambassadors List */}
             <div className={`${styles.teamGroup} ${styles.fullWidth}`}>
               <h3 className={styles.groupTitle}>Tra gli Ambasciatori Figurano:</h3>

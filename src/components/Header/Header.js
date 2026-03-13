@@ -11,7 +11,7 @@ export default function Header() {
         <nav className={styles.nav}> {/* aggiungere logo ad inizio header ed aggiungere ancore */}
           <a href="#about" className={styles.navLink}>Cos'è</a>
           <a href="#program" className={styles.navLink}>Programma</a>
-          <a href="#ambassadors" className={styles.navLink}>Ambasciatori</a>
+          <a href="#ambassadors" className={styles.navLink}>Chi Siamo?</a>
           <a href="#partnership" className={styles.navLink}>Partnership</a>
           <a href="https://www.eventbrite.it/e/1984610354996?aff=oddtdtcreator" target="_blank" rel="noreferrer" className="btn">
             Acquista il Biglietto
