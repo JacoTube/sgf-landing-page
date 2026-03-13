@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Program from "@/components/Program/Program";
 import Partnership from "@/components/Partnership/Partnership"
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Program />
         <Ambassadors />
         <Partnership />
+        <Footer />
       </main>
     </>
   )
