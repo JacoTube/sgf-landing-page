@@ -1,8 +1,20 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import styles from './header.module.css';
 import mainLogo from '@/assets/main_logo.svg';
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <div className={`container ${styles.headerContainer}`}>
@@ -14,12 +26,34 @@ export default function Header() {
             priority
           />
         </div>
-        <nav className={styles.nav}>
+
+        {/* Desktop Navigation */}
+        <nav className={styles.navDesktop}>
           <a href="#about" className={styles.navLink}>Cos'è</a>
           <a href="#program" className={styles.navLink}>Programma</a>
           <a href="#ambassadors" className={styles.navLink}>Chi Siamo?</a>
           <a href="#partnership" className={styles.navLink}>Partnership</a>
           <a href="https://www.eventbrite.it/e/1984610354996?aff=oddtdtcreator" target="_blank" rel="noreferrer" className="btn">
+            Acquista il Biglietto
+          </a>
+        </nav>
+
+        {/* Mobile Hamburger Icon */}
+        <div className={styles.hamburger} onClick={toggleMobileMenu}>
+          <span className={`${styles.bar} ${isMobileMenuOpen ? styles.activeBar1 : ''}`}></span>
+          <span className={`${styles.bar} ${isMobileMenuOpen ? styles.activeBar2 : ''}`}></span>
+          <span className={`${styles.bar} ${isMobileMenuOpen ? styles.activeBar3 : ''}`}></span>
+        </div>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
+        <nav className={styles.navMobile}>
+          <a href="#about" className={styles.navLinkMobile} onClick={closeMobileMenu}>Cos'è</a>
+          <a href="#program" className={styles.navLinkMobile} onClick={closeMobileMenu}>Programma</a>
+          <a href="#ambassadors" className={styles.navLinkMobile} onClick={closeMobileMenu}>Chi Siamo?</a>
+          <a href="#partnership" className={styles.navLinkMobile} onClick={closeMobileMenu}>Partnership</a>
+          <a href="https://www.eventbrite.it/e/1984610354996?aff=oddtdtcreator" target="_blank" rel="noreferrer" className={`btn ${styles.mobileBtn}`} onClick={closeMobileMenu}>
             Acquista il Biglietto
           </a>
         </nav>
