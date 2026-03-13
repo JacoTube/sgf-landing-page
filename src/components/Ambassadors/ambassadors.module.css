@@ -1,0 +1,117 @@
+.ambassadorsSection {
+  background-color: var(--color-gray-light);
+  color: var(--color-dark);
+}
+
+.heading {
+  font-size: 40px;
+  margin-bottom: 24px;
+  color: var(--color-primary);
+  text-align: left;
+}
+
+.lead {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 48px;
+  color: var(--color-gray-dark);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.teamGroup {
+  background: var(--color-white);
+  padding: 32px;
+  border-radius: var(--border-radius-base);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.groupTitle {
+  font-size: 20px;
+  color: var(--color-secondary);
+  border-bottom: 2px solid var(--color-gray-light);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.teamList {
+  list-style: none;
+  padding: 0;
+}
+
+.teamList li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-gray-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.teamList li:last-child {
+  border-bottom: none;
+}
+
+.teamList li span {
+  font-size: 14px;
+  color: var(--color-gray);
+  margin-top: 4px;
+}
+
+.ambassadorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ambassadorCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--color-gray-light);
+  border-radius: var(--border-radius-base);
+  border-left: 3px solid var(--color-primary);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.ambassadorCard:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+a.ambassadorCard:hover span {
+  color: #ccc;
+}
+
+.ambassadorCard strong {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.ambassadorCard span {
+  font-size: 13px;
+  color: var(--color-gray-dark);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .heading {
+    font-size: 32px;
+  }
+}
