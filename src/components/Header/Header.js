@@ -19,12 +19,17 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.headerContainer}`}>
         <div className={styles.logo}>
-          <Image 
-            src={mainLogo} 
-            alt="Stati Generali del Fare Logo" 
-            className={styles.logoImage}
-            priority
-          />
+          <a href="#" className={styles.logoLink} onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}>
+            <Image 
+              src={mainLogo} 
+              alt="Stati Generali del Fare Logo" 
+              className={styles.logoImage}
+              priority
+            />
+          </a>
         </div>
 
         {/* Desktop Navigation */}
