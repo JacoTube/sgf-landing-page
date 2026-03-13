@@ -45,22 +45,22 @@ export default function Ambassadors() {
               <h3 className={styles.groupTitle}>Tra gli Ambasciatori Figurano:</h3>
               <div className={styles.ambassadorsGrid}>
                 <a href="https://mulinum.it/" target="_blank" rel="noreferrer" className={styles.ambassadorCard}>
-                  <strong>Stefano Caccavari</strong>
+                  <strong>Stefano Caccavari 🔗</strong>
                   <span>Fondatore di Mulinum e pioniere del recupero di borghi rurali</span>
                 </a>
                 <a href="https://www.kashmirmusic.it/artists/sarafine/" target="_blank" rel="noreferrer" className={styles.ambassadorCard}>
-                  <strong>Sarafine</strong>
+                  <strong>Sarafine 🔗</strong>
                   <span>Nel mondo della musica e della cultura</span>
                 </a>
                 <a href="https://it.wikipedia.org/wiki/Francesco_Laratta" target="_blank" rel="noreferrer" className={styles.ambassadorCard}>
-                  <strong>Franco Laratta</strong>
+                  <strong>Franco Laratta 🔗</strong>
                   <span>Giornalista e già parlamentare</span>
                 </a>
                 <a href="https://www.instagram.com/noemispinetti/" target="_blank" rel="noreferrer" className={styles.ambassadorCard}>
-                  <strong>Noemi Spinetti</strong>
+                  <strong>Noemi Spinetti 🔗</strong>
                 </a>
                 <a href="https://www.giacomotriglia.com/" target="_blank" rel="noreferrer" className={styles.ambassadorCard}>
-                  <strong>Giacomo Triglia</strong>
+                  <strong>Giacomo Triglia 🔗</strong>
                 </a>
                 <div className={styles.ambassadorCard}>
                   <strong>Francesco Cuteri</strong>
@@ -72,7 +72,7 @@ export default function Ambassadors() {
                   <strong>Simona Lo Bianco</strong>
                 </div>
                 <a href="https://www.instagram.com/next_heaven/" target="_blank" rel="noreferrer" className={styles.ambassadorCard}>
-                  <strong>Giuseppe Scuticchio</strong>
+                  <strong>Giuseppe Scuticchio 🔗</strong>
                 </a>
                 <div className={styles.ambassadorCard}>
                   <strong>Ettore Bonanno</strong>

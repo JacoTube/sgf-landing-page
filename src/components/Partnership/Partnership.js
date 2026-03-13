@@ -21,7 +21,7 @@ export default function Partnership() {
               Scopri le opportunità di Partnership
             </a>
             <span className={styles.orText}>oppure</span>
-            <a href="mailto:[EMAIL_ADDRESS]?subject=Richiesto%20Info%20Stati%20Generali%20del%20Fare" className={styles.mailLink}>
+            <a href="mailto:[EMAIL_ADDRESS]?subject=Richiesta%20Info%20Stati%20Generali%20del%20Fare" className={styles.mailLink}>
               Vuoi saperne di più? Scrivi a [EMAIL_ADDRESS]
             </a>
           </div>
