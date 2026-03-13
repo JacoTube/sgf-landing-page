@@ -5,6 +5,7 @@ import Hero from "@/components/Hero/Hero";
 import Program from "@/components/Program/Program";
 import Partnership from "@/components/Partnership/Partnership"
 import Footer from "@/components/Footer/Footer";
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <Hero />
+        <About />
         <Program />
         <Ambassadors />
         <Partnership />
