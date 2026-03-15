@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={`container ${styles.container}`}>
         <div className={styles.topInfo}>
           <h4>Gli Stati Generali del Fare 2026</h4>
-          <p>20 — 22 Marzo | Altafiumara Resort & Spa Villa San Giovanni (RC)</p>
+          <p>21 — 22 Marzo | Altafiumara Resort & Spa Villa San Giovanni (RC)</p>
           <div className={styles.credits}>
             <p>Made with ❤️ by <strong>Dritara</strong> — Illuminiamo il futuro tech del Sud Italia.</p>
           </div>

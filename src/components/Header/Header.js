@@ -38,9 +38,6 @@ export default function Header() {
           <a href="#program" className={styles.navLink}>Programma</a>
           <a href="#ambassadors" className={styles.navLink}>Chi Siamo?</a>
           <a href="#partnership" className={styles.navLink}>Partnership</a>
-          <a href="https://www.eventbrite.it/e/1984610354996?aff=oddtdtcreator" target="_blank" rel="noreferrer" className="btn">
-            Acquista il Biglietto
-          </a>
         </nav>
 
         {/* Mobile Hamburger Icon */}
@@ -58,9 +55,6 @@ export default function Header() {
           <a href="#program" className={styles.navLinkMobile} onClick={closeMobileMenu}>Programma</a>
           <a href="#ambassadors" className={styles.navLinkMobile} onClick={closeMobileMenu}>Chi Siamo?</a>
           <a href="#partnership" className={styles.navLinkMobile} onClick={closeMobileMenu}>Partnership</a>
-          <a href="https://www.eventbrite.it/e/1984610354996?aff=oddtdtcreator" target="_blank" rel="noreferrer" className={`btn ${styles.mobileBtn}`} onClick={closeMobileMenu}>
-            Acquista il Biglietto
-          </a>
         </nav>
       </div>
     </header>
