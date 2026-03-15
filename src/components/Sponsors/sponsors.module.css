@@ -1,0 +1,104 @@
+.sponsorsSection {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 0 50px 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.title {
+  color: var(--color-primary);
+  font-family: var(--font-headings);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sliderTrack {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  /* space between logos */
+  width: max-content;
+  padding: 0 40px;
+  /* some padding so it looks good when not animating */
+  transition: all 0.3s ease;
+}
+
+/* If not animating, we center them */
+.sliderTrack:not(.animate) {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* allow wrapping if it's not animating, just in case */
+}
+
+.sponsorItem {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsorImage {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.sponsorImage:hover {
+  transform: scale(1.05);
+  /* Slight scale to keep it dynamic on hover instead of color change */
+}
+
+.animate {
+  animation: slideDesktop 30s linear infinite;
+  padding: 0;
+  /* remove horizontal padding for seamless scroll */
+}
+
+/* calc(-50% - (gap / 2)) for perfect loop if using 1 set of duplicates */
+@keyframes slideDesktop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 30px));
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsorsSection {
+    padding: 30px 0;
+  }
+
+  .sliderTrack {
+    gap: 40px;
+  }
+
+  .sponsorImage {
+    max-height: 80px;
+  }
+
+  .animate {
+    animation: slideMobile 20s linear infinite;
+  }
+
+  @keyframes slideMobile {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 20px));
+    }
+  }
+}
