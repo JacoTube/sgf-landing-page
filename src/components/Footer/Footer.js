@@ -16,16 +16,9 @@ export default function Footer() {
 
         <div className={styles.socials}>
           {/* Social icons can be added here replacing text */}
-          <a href="https://www.instagram.com/dritara_tech" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+          <a href="ttps://www.instagram.com/statigeneralidelfare" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
             <Image src={igLogo} alt="Instagram" width={20} height={20} />
           </a>
-          <a href="https://www.dritara.tech/" className={styles.socialIcon}>WEB</a>
-        </div>
-
-        <div className={styles.bottomInfo}>
-          <p>&copy; Copyright 2026 Dritara. Tutti i diritti riservati.</p>
-          <p>Sede Legale: San Basile (CS)</p>
-          <p>P.IVA: 03979980780</p>
         </div>
       </div>
     </footer>

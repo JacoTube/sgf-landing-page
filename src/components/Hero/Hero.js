@@ -17,7 +17,7 @@ export default function Hero() {
       <div className={styles.overlay}></div>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
-          <h2 className={styles.subtitle}>Qualcosa di grosso sta per succedere in Calabria</h2>
+          <h2 className={styles.subtitle}>Un Laboratorio per il Futuro della Calabria</h2>
           <h1 className={styles.title}>Stati Generali del Fare 2026</h1>
           <p className={styles.description}>
             21 e 22 Marzo — Altafiumara Resort & Spa
