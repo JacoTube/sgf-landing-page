@@ -19,7 +19,6 @@ export default function Ambassadors() {
               <ul className={styles.teamList}>
                 <li><strong>Roberto Tesoriere</strong> <span>Fondatore, Ambasciatori di Calabria</span></li>
                 <li><strong>Sarah Procopio</strong> <span>Direzione Contenuti e Vision</span></li>
-                <li><strong>Gaetano Moraca</strong> <span>Direzione Contenuti e Vision</span></li>
                 <li><strong>Christian Zuin (Protur Media)</strong> <span>Organizzazione & Logistica</span></li>
                 <li><strong>Alessandro Fedele</strong> <span>Organizzazione & Logistica</span></li>
                 <li><strong>Chef Battaglia</strong> <span>Organizzazione & Logistica</span></li>
